@@ -47,6 +47,8 @@ def make_confusion_matrix(y_true, y_pred, classes=None, figsize=(10, 10), text_s
   ax.xaxis.set_label_position("bottom")
   ax.xaxis.tick_bottom()
 
+  plt.xticks(rotation=70, fontsize=text_size)
+  plt.yticks(fontsize=text_size)
 
   threshold = (cm.max() + cm.min()) / 2.
 
